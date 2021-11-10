@@ -116,20 +116,25 @@ Per esempio:
 
 ### Funzionalità dell'applicazione
 La HomePage dell'e-commerce rappresenta la vetrina online dell'attivita. 
-La HomePage è costituita da due parti:
+La <b>HomePage</b> è costituita da due parti:
  -- la barra di navigazione in alto nella quale sono presenti 
     i pulsanti "Checkout" e "Aggiungi Prodotto".
-    ![](img-README/search-bar.png) 
-    Il pulsante "Checkout" che porta al carrello dei prodotti. Il pulsante "Aggiungi Prodotto" permette a chi amministra l'e-commerce di inserire altri prodotti destinati alla vendità. 
- -- Galleria dei prodotti .
     ![](img-README/search-bar.png)
-    In ogni card è presente il pulsante per aggiungere il prodotto direttamente al carrello. 
+   </br> 
+    Il pulsante "Checkout" che porta al carrello dei prodotti. Il pulsante "Aggiungi Prodotto" permette a chi amministra l'e-commerce di inserire altri prodotti destinati alla       vendità.
+  </br></br>
+ -- <b>Galleria dei prodotti .</b></br></br>
+    ![](img-README/gallery.png)
+  </br>
+   In ogni card è presente il pulsante per aggiungere il prodotto direttamente al carrello. 
     Cliccando sul nome del prodotto si viene indirizzati alla pagina di dettalio del prodotto. 
-(folder: main-page)
+    (folder: main-page)
 
-Pagina dettaglio prodotto
- ![](img-README/detail-page.png)
- Come si osserva dall'immagine nella pagina di dettaglio è presenta la barra di ricerca prodotto in alto, anche dalla pagina di dettaglio si puo procedere all'inserimento del prodotto nel carrello per l'acquisto.
+   <b>Pagina dettaglio prodotto</b>
+ 
+   ![](img-README/detail-page.png)
+ 
+   Come si osserva dall'immagine nella pagina di dettaglio è presenta la barra di ricerca prodotto in alto, anche dalla pagina di dettaglio si puo procedere all'inserimento del prodotto nel carrello per l'acquisto.
 (folder: detail-page-description)
 
 Barra di ricerca
