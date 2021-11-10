@@ -1,0 +1,9 @@
+<h3>Prodotti Acquistati</h3>
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{item.name}}</span>
+    <span>Formato: {{item.peso}}</span>
+    <span>Q:<input type="number" min="1" max="10" value="1"> </span>
+    <span>Prezzo: {{item.prezzo}}</span>
+</div>
+<button type="button" class="btn btn-primary btn-lg" routerLink="/main-page">Acquista altro</button>
+<button type="button" class="btn btn-secondary btn-lg">Concludi l'acquisto</button>

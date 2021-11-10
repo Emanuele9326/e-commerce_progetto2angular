@@ -1,0 +1,14 @@
+* {
+    margin: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    width: 70%;
+    margin: 10px;
+}

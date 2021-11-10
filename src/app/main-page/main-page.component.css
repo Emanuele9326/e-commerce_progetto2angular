@@ -1,0 +1,56 @@
+.navbar {
+    margin: auto;
+}
+
+.logo {
+    width: 40%;
+    height: 40%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-bar {
+    width: 100%;
+    margin: 20px;
+    font-size: small;
+}
+
+.col {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.card {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+.btn-group {
+    background-color: rgb(212, 216, 224);
+    color: black;
+    position: absolute;
+    padding: 5px;
+    bottom: 2px;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.text {
+    padding-bottom: 15px;
+}
