@@ -54,6 +54,7 @@ export class UploadsComponent implements OnInit {
     this.formArtc = this.fb.group({
       imgurl: new FormControl({ value: null, disabled: true }, Validators.required),
       name: ['', Validators.required],
+      ID_prodotto:['', Validators.required],
       prezzo: ['', Validators.required],
       peso: ['', Validators.required],
       descrizione: ['', Validators.required],
@@ -136,6 +137,7 @@ export class UploadsComponent implements OnInit {
 
       imgurl: this.imgurl,
       name: this.formArtc.value.name,
+      ID: this.formArtc.value.ID_prodotto,
       prezzo: this.formArtc.value.prezzo,
       peso: this.formArtc.value.peso,
       descrizione: this.formArtc.value.descrizione,
@@ -169,6 +171,7 @@ export class UploadsComponent implements OnInit {
     this.formArtc.setValue({
       imgurl: '',
       name: '',
+      ID_prodotto:'',
       prezzo: '',
       peso: '',
       descrizione: '',
