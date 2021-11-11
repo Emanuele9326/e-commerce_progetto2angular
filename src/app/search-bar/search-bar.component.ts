@@ -8,7 +8,7 @@ import { Search_input } from '../search_input';
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css']
 })
-export class SearchBarComponent implements AfterViewInit {
+export class SearchBarComponent implements AfterViewInit,OnInit{
 
   collection: any;
   collection_obs: any;
@@ -17,11 +17,11 @@ export class SearchBarComponent implements AfterViewInit {
   a: any;
   data: any[] = [];
   input_name: any;
-  message: string = 'loading :(';
+  array: any[] | undefined;
 
   constructor(public firestore: AngularFirestore, private cdr: ChangeDetectorRef) { }
+
   ngAfterViewInit(): void {
-    this.message = 'all done loading :)'
     this.cdr.detectChanges();
   }
 
@@ -35,6 +35,7 @@ export class SearchBarComponent implements AfterViewInit {
       };
 
     });
+
 
     this.input_name = new Search_input(this.data[0])
 
