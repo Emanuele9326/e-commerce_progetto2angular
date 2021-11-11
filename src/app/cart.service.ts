@@ -25,8 +25,8 @@ export class CartService {
       };
       if (this.addToArray == true) {
         this.addToArray = false;
-        window.alert("Prodotto gia presente");
-        console.log('prodotto gia inserito');
+        window.alert("Prodotto già presente");
+        console.log('prodotto già inserito');
       } else {
         this.items.push(product);
 
