@@ -184,7 +184,7 @@ Scegliendo un prodotto, e premendo il pulsante "Search" si viene reindirizzati a
 <b>Form: aggiungi prodotto</b>
 </br>
 &emsp;&emsp;&emsp;&emsp; ![](img-README/form1.png)
-&emsp;&emsp; ![](img-README/form2.png)
+&emsp;&emsp; ![](img-README/form22.png)
 </br>
  Come si osserva il Form è suddiviso in due parti. 
  Bisogna prima caricare l'immagine e premere "Invio", in questo modo il campo "Url" del secondo form si compilerà in automatico. Una volta che l'immagine è stata caricata, compilare la seconda parte del Form in tutte le sue parti e premere "Invia Form".
@@ -223,7 +223,8 @@ L'app può essere testata in locale eseguendo i seguenti passaggi:
 - Testare l'app in locale tramite il comando ng serve.
 Il comando "ng serve" crea e serve l'app, ricostruendola in base alle modifiche ai file .
 Una volta che l'app è stata creata e servita andare al seguente link <a>http://localhost:4200/**</a> oppure cliccare sul link riportato nel terminale, vedere immagine seguente.
-![](img-README/link.jpg)
+
+ ![](img-README/terminale.png)
 
 ## Licenza
 
