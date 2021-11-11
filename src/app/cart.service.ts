@@ -13,24 +13,23 @@ export class CartService {
 
   //add item to cart
   addToCart(product: any) {
+
     if (this.items.length === 0) {
       this.items.push(product);
-
       window.alert('Il prodotto è stato inserito nel carrello');
     } else {
       for (let i = 0; i < this.items.length; i++) {
-        if (this.items[i].name === product.name) {
+        if (this.items[i].ID === product.ID) {
           this.addToArray = true;
         }
       };
       if (this.addToArray == true) {
         this.addToArray = false;
-        window.alert("Prodotto già presente");
-        console.log('prodotto già inserito');
+        window.alert('Prodotto già presente nel carrello');
+        console.log('prodotto gia inserito')
       } else {
         this.items.push(product);
-
-        window.alert('Il prodotto è stato inserito nel carrello');
+       window.alert('Il prodotto è stato inserito nel carrello');
       }
     }
 
