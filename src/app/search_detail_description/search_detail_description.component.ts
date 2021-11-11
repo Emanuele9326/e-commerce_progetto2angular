@@ -26,47 +26,21 @@ export class Search_detail_descriptionComponent implements OnInit {
     public firestore: AngularFirestore,
     public cartService: CartService,
 
-  ) {
-    this.route.params.subscribe(params => {
-      this.paramsChange(params.name)
-    })
-  }
-
+  ) { }
 
   ngOnInit() {
-    let parameter = this.route.snapshot.paramMap.get('name');
 
-    if (parameter !== null) {
-      this.array_parameter = parameter.split('')
-    }
-
-    if (this.array_parameter !== undefined) {
-      let i = Number(this.array_parameter[0]);
-
-      this.collection = this.firestore.collection('cookie').valueChanges();
-      this.collection1 = this.collection.subscribe((array: any) => {
-
-        this.item = array[i];
-        this.name = array[i].name;
-        this.description = array[i].descrizione;
-        this.ingrediants = array[i].ingredienti;
-        this.weight = array[i].peso;
-        this.price = array[i].prezzo;
-        this.imgurl = array[i].imgurl;
-      });
-
-    }
-
+    this.route.params.subscribe(params => this.handleRouteChange(params.name))
   }
 
-  paramsChange(name: any) {
+  handleRouteChange(name: any) {
 
     const array_parameter = name.split('');
     let i = Number(array_parameter![0]);
 
     this.collection = this.firestore.collection('cookie').valueChanges();
     this.collection1 = this.collection.subscribe((array: any) => {
-
+      this.item = array[i];
       this.name = array[i].name;
       this.description = array[i].descrizione;
       this.ingrediants = array[i].ingredienti;
@@ -76,6 +50,7 @@ export class Search_detail_descriptionComponent implements OnInit {
 
 
     });
+
   }
 
   addToCart(product: any) {
