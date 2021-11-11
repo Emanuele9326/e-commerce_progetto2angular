@@ -23,12 +23,13 @@
 
 ## Informazioni sul progetto
 
-La finalità di questo progetto è quella di sviluppare un sito di e-commerce con il framework Angular e l'utilzzo del database di <b>Firebase</b>, non sono state utilizzate API esterne.
+La finalità di questo progetto è quella di sviluppare un sito di e-commerce con il framework Angular e l'utilzzo del database di <b>Firebase</b>.
+Non sono state utilizzate API esterne.
 
-Durante la realizzazione di questo prgetto si è supposto che si stavo realizzando un e-commerce per una attività artigianale che realizza dolci per esempio una pasticceria.
+Durante la realizzazione di questo prgetto si è supposto che si stavo realizzando un e-commerce per un'attività artigianale che realizza dolci per esempio una pasticceria.
 
 L'applicazione è stata deployata su Firebase:
-- <h4>Link Firebase: (---)</h4>
+- <h4>Link Firebase: (https://progetto2-angular.web.app/)</h4>
 
 #### <h3>Costruito con:</h3>
 
@@ -41,7 +42,14 @@ L'applicazione è stata deployata su Firebase:
 
 - [Bootstrap Icons] (https://icons.getbootstrap.com/)
 
-
+<b>Database</b>
+ <br>
+  --Database Firebase     
+   <ul>
+     <li>Firestore Database</li>
+     <li>Realtime Database</li>
+     <li>Storage</li>
+ </ul>
 <!--Descrizione-->
 
 ## Descrizione
@@ -82,7 +90,7 @@ Contiene le immagini presenti nel README.md
       -- environments.prod.ts (che viene utilizzato in fase di produzione);
      In questi due file è stata inserita la configurazione Firebase dell'app web.
       
-      ![](img-README/environment.png)
+     ![](img-README/environment.png)
   </li>
    <li>Altri file come:
      <ol>
@@ -101,7 +109,7 @@ Contiene le immagini presenti nel README.md
 
 <h4>File di configurazione dell'applicazione</h4>
 
-I file di configurazione specifici dell'applicazione per l'applicazione root risiedono al livello di root dell'area di lavoro 
+I file di configurazione specifici dell'applicazione, per l'applicazione root risiedono a livello di root dell'area di lavoro.
 Per esempio:
 <ol>
  <li>Karma.conf.js: configurazione carma specifica per l'applicazione</li>
@@ -115,55 +123,83 @@ Per esempio:
 </ol>
 
 ### Funzionalità dell'applicazione
-La HomePage dell'e-commerce rappresenta la vetrina online dell'attivita. 
+
+<b>HomePage</b>
+ </br>
+ HomePage dell'e-commerce rappresenta la vetrina online dell'attivita.
+</br>     
 La <b>HomePage</b> è costituita da due parti:
- -- la barra di navigazione in alto nella quale sono presenti 
+    </br>
+  -- <b>Barra di navigazione</b> in alto nella quale sono presenti 
     i pulsanti "Checkout" e "Aggiungi Prodotto".
-    ![](img-README/search-bar.png)
+  </br>
+  </br>
+  &emsp;&emsp; ![](img-README/search-bar.png)
    </br> 
     Il pulsante "Checkout" che porta al carrello dei prodotti. Il pulsante "Aggiungi Prodotto" permette a chi amministra l'e-commerce di inserire altri prodotti destinati alla       vendità.
-  </br></br>
- -- <b>Galleria dei prodotti .</b></br></br>
-    ![](img-README/gallery.png)
+  </br>
+  </br>
+ -- <b>Galleria dei prodotti</b>
+   </br>
+   </br>
+   &emsp;&emsp; ![](img-README/gallery.png)
+  </br>
   </br>
    In ogni card è presente il pulsante per aggiungere il prodotto direttamente al carrello. 
-    Cliccando sul nome del prodotto si viene indirizzati alla pagina di dettalio del prodotto. 
-    (folder: main-page)
+   Cliccando sul nome del prodotto si viene indirizzati alla pagina di dettaglio del prodotto. 
+   </br>
+   (folder: main-page)
 
-   <b>Pagina dettaglio prodotto</b>
+  <b>Pagina dettaglio prodotto</b>
  
-   ![](img-README/detail-page.png)
+  &emsp;&emsp; ![](img-README/detail-page.png)
  
-   Come si osserva dall'immagine nella pagina di dettaglio è presenta la barra di ricerca prodotto in alto, anche dalla pagina di dettaglio si puo procedere all'inserimento del prodotto nel carrello per l'acquisto.
+ Come si osserva dall'immagine nella pagina di dettaglio è presenta la barra di ricerca prodotto in alto. Anche dalla pagina di dettaglio si puo procedere all'inserimento del   prodotto nel carrello per l'acquisto.
+</br>
 (folder: detail-page-description)
+</br>
+</br>
 
-Barra di ricerca
- ![](img-README/search.png)
- Cliccando sulla barra di ricerca si apre una tendina dove vengono riportati tutti i prodotti in vendita .
- Scegliendo un prodotto è premendo il pulsante search si viene reindirizzati alla pagina di dettaglio del prodotto.
+<b>Barra di ricerca</b>
+</br>
+&emsp;&emsp; ![](img-README/search.png)
+</br>
+
+Cliccando sulla barra di ricerca si apre una tendina dove vengono riportati tutti i prodotti in vendita .
+Scegliendo un prodotto, e premendo il pulsante "Search" si viene reindirizzati alla pagina di dettaglio del prodotto.
+</br>
 (folder: search-bar)
-
-Carrello
- ![](img-README/cart.png)
- Come si osserva nel carrello è presente la voce "Q" che rappresenta il numero dei prodotti aquistati. 
- Il pulsante Concludi l'aquisto per il momento non ha nessuna funzione ad esso collegata.
+</br>
+</br>
+<b>Carrello</b>
+</br>
+ &emsp;&emsp;&emsp;&emsp; ![](img-README/cart.png)
+ </br>
+ Come si osserva nel carrello è presente la voce "Q" che rappresenta il numero dei prodotti da acquistare. 
+ Il pulsante "Concludi l'aquisto" per il momento non ha nessuna funzione ad esso collegata.
+ </br>
 (folder: cart)
-
-Form: aggiungi prodotto
- ![](img-README/form1.png)
- ![](img-README/form2.png)
+</br>
+</br>
+<b>Form: aggiungi prodotto</b>
+</br>
+&emsp;&emsp;&emsp;&emsp; ![](img-README/form1.png)
+&emsp;&emsp; ![](img-README/form2.png)
+</br>
  Come si osserva il Form è suddiviso in due parti. 
- Bisogna prima caricare l'immagine e premere "Invio", in questo modo il campo "Url" del secondo form si compilerà in automatico. Una volta che l'immagine è stata caricata, compilare la seconda parte del Form in tutte le sue parti e premere "Invia Form". Ora l'articolo è stato caricato correttamente.
+ Bisogna prima caricare l'immagine e premere "Invio", in questo modo il campo "Url" del secondo form si compilerà in automatico. Una volta che l'immagine è stata caricata, compilare la seconda parte del Form in tutte le sue parti e premere "Invia Form".
  Sè il form non viene compilato in tutte le sue parti o non viene caricata prima l'immagine, compare il messaggio di errore e il form non viene inviato.
- Con i pulsanti "Delete immagini" e "Delete dati" si viene reindirizzati respittivamente all'elenco dell'immagini caricate nel quale si può procedere a cancellare ciascuna immagine presente nel database, e all'elenco di ciascun prodotto caricato anche in esso si può procedere a cancellare ciscun prodotto.
- ![](img-README/el.immagini.png)
+ Con il pulsante "Delete immagine" si viene reindirizzati all'elenco dell'immagini caricate nello Storage di Firebase nel quale si può procedere a cancellare ciascuna immagine presente nel database. 
+Nel secondo form con il pulsante "Delete dati" si accede all'elenco dei prodotti caricati in "Firestore Database" anche in esso si può procedere a cancellare ciscun prodotto.
+ ![](img-README/el.immagine.png)
  ![](img-README/el.prodotti.png)
-
+ </br>
 (
  folder:uploads ;
  folder:delete_data; 
  folder: delete_img;
 )
+</br>
 ### Download e testare app in locale
 
 - Sul proprio dispositivo è necessario installare: 
