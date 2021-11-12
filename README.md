@@ -86,12 +86,15 @@ Contiene le immagini presenti nel README.md
   <li>
      Cartella environments: contiene le opzioni di configurazione della build per particolari ambienti di destinazione.
      In particolare nella cartella environments sono presenti:
+     </br>
       -- environments.ts (che viene utilizzato in fase di sviluppo);
+     </br>
       -- environments.prod.ts (che viene utilizzato in fase di produzione);
      </br> 
     In questi due file è stata inserita la configurazione Firebase dell'app web.
      </br>
-   ![](img-README/enviroment.png)
+  <img src="img-README/environment.png"/>
+</br>
   </li>
    <li>Altri file come:
      <ol>
@@ -195,12 +198,9 @@ Nel secondo form con il pulsante "Delete dati" si accede all'elenco dei prodotti
  ![](img-README/el.immagine.png)
  ![](img-README/el.prodotti.png)
  </br>
-(
- folder:uploads ;
- folder:delete_data; 
- folder: delete_img;
-)
+(folder:uploads ;</br>folder:delete_data;</br>folder: delete_img;)
 </br>
+
 ### Download e testare app in locale
 
 - Sul proprio dispositivo è necessario installare: 
