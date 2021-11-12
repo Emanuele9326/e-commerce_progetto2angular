@@ -218,9 +218,8 @@ L'app può essere testata in locale eseguendo i seguenti passaggi:
 
 - Clonare il repository del progetto in locale 
 
-- Installare le "dependencies" e "devDependencies" che sono riportate nel file package.json tramite il comando :
-  
-  npm install <dependencies o devDependencies>
+- Installare le "dependencies" e "devDependencies" che sono riportate nel file package.json tramite il comando:
+  npm install </br>(npm install dependencies e npm install devDependencies)
   
   ![](img-README/dependencies.png) 
   ![](img-README/devdependencies.png)
