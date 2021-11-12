@@ -146,7 +146,7 @@ export class UploadsComponent implements OnInit {
 
     }
 
-    if (this.imgurl == undefined || this.formArtc.invalid) {
+    if (art.imgurl == undefined || this.formArtc.invalid) {
       this.submitted = true;
       console.log(this.submitted)
     } else {
