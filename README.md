@@ -26,7 +26,7 @@
 La finalità di questo progetto è quella di sviluppare un sito di e-commerce con il framework Angular e l'utilzzo del database di <b>Firebase</b>.
 Non sono state utilizzate API esterne.
 
-Durante la realizzazione di questo prgetto si è supposto che si stavo realizzando un e-commerce per un'attività artigianale che realizza dolci per esempio una pasticceria.
+Durante la realizzazione di questo prgetto si è supposto che si stava realizzando un e-commerce per un'attività artigianale che realizza dolci per esempio una pasticceria.
 
 L'applicazione è stata deployata su Firebase:
 - <h4>Link Firebase: (https://progetto2-angular.web.app/)</h4>
@@ -88,9 +88,10 @@ Contiene le immagini presenti nel README.md
      In particolare nella cartella environments sono presenti:
       -- environments.ts (che viene utilizzato in fase di sviluppo);
       -- environments.prod.ts (che viene utilizzato in fase di produzione);
-     In questi due file è stata inserita la configurazione Firebase dell'app web.
-      
-     ![](img-README/environment.png)
+     </br> 
+    In questi due file è stata inserita la configurazione Firebase dell'app web.
+     </br>
+   ![](img-README/enviroment.png)
   </li>
    <li>Altri file come:
      <ol>
