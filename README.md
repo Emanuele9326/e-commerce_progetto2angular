@@ -28,6 +28,11 @@ Non sono state utilizzate API esterne.
 
 Durante la realizzazione di questo prgetto si è supposto che si stava realizzando un e-commerce per un'attività artigianale che realizza dolci per esempio una pasticceria.
 
+In questo progetto si utilizza il database di Firebase in particolare:
+*	Cloud Storage di Firebase per archiviare l’immagini di ciascun prodotto.
+*	Cloud Firestore che utilizza un database NoSQL.I dati in esso vengono archiviati in documenti. Questi documenti sono archiviati in raccolte (in questo caso la raccolta ‘cookie’) che rappresenta la raccolta per i documenti.
+*	Realtime database di Firebase viene utilizzato per memorizzare in modo temporaneo il link dell’immagine caricata nel Cloud Storage. Questo link viene memorizzato insieme ad altri dati in cloud Firestore attraverso il “Form2”
+
 L'applicazione è stata deployata su Firebase:
 - <h4>Link Firebase: (https://progetto2-angular.web.app/)</h4>
 
@@ -158,7 +163,7 @@ La <b>HomePage</b> è costituita da due parti:
  
   &emsp;&emsp; ![](img-README/detail-page.png)
  
- Come si osserva dall'immagine nella pagina di dettaglio è presenta la barra di ricerca prodotto in alto. Anche dalla pagina di dettaglio si puo procedere all'inserimento del   prodotto nel carrello per l'acquisto.
+ Come si osserva dall'immagine nella pagina di dettaglio è presente la barra di ricerca prodotto in alto. Anche dalla pagina di dettaglio si puo procedere all'inserimento del   prodotto nel carrello per l'acquisto.
 </br>
 (folder: detail-page-description)
 </br>
@@ -193,6 +198,7 @@ Scegliendo un prodotto, e premendo il pulsante "Search" si viene reindirizzati a
  Come si osserva il Form è suddiviso in due parti. 
  Bisogna prima caricare l'immagine e premere "Invio", in questo modo il campo "Url" del secondo form si compilerà in automatico. Una volta che l'immagine è stata caricata, compilare la seconda parte del Form in tutte le sue parti e premere "Invia Form".
  Sè il form non viene compilato in tutte le sue parti o non viene caricata prima l'immagine, compare il messaggio di errore e il form non viene inviato.
+ Il campo "ID prodotto" è un codice numerico identificativo immesso dall'utente con la funzione di identificare in modo univoco il prodotto.
  Con il pulsante "Delete immagine" si viene reindirizzati all'elenco dell'immagini caricate nello Storage di Firebase nel quale si può procedere a cancellare ciascuna immagine presente nel database. 
 Nel secondo form con il pulsante "Delete dati" si accede all'elenco dei prodotti caricati in "Firestore Database" anche in esso si può procedere a cancellare ciscun prodotto.
  ![](img-README/el.immagine.png)
