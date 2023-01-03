@@ -1,4 +1,5 @@
 <h1 algin="center">2° Progetto Angular: e-commerce</h1>
+<h4>L'applicazione è stata deployata su Firebase:https://progetto2-angular.web.app/</h4>
 
 <details open="open">
   <summary>Sommario</summary>
@@ -33,8 +34,6 @@ In questo progetto si utilizza il database di Firebase in particolare:
 *	Cloud Firestore che utilizza un database NoSQL.I dati in esso vengono archiviati in documenti. Questi documenti sono archiviati in raccolte (in questo caso la raccolta ‘cookie’) che rappresenta la raccolta per i documenti.
 *	Realtime database di Firebase viene utilizzato per memorizzare in modo temporaneo il link dell’immagine caricata nel Cloud Storage. Questo link viene memorizzato insieme ad altri dati in cloud Firestore attraverso il “Form2”
 
-L'applicazione è stata deployata su Firebase:
-- <h4>Link Firebase: (https://progetto2-angular.web.app/)</h4>
 
 #### <h3>Costruito con:</h3>
 
